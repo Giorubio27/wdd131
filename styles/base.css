@@ -1,0 +1,149 @@
+.griddy {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.flexman nav a:hover {
+    text-decoration: overline;
+}
+
+#course_title {
+    color: blueviolet;
+    display: block;
+}
+
+
+
+h1 {
+    background-color: aqua;
+    margin-bottom: 0;
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+
+.time nav {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.card h2 {
+
+    background-color: aqua;
+    margin-top: 0;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.time h3 {
+    text-align: center;
+    background-color: aqua;
+    border-radius: 1rem 1rem 0 0;
+    margin-top: 0;
+    padding-bottom: 7px;
+
+}
+
+.time nav {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+aside {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 1em;
+    margin-left: 10px;
+}
+
+.face p {
+    text-align: center;
+}
+
+.brazil {
+    position: relative;
+}
+
+.brazil p {
+    margin-left: 5px;
+}
+
+.brazil img {
+    float: left;
+    width: 200px;
+    padding: 25px;
+    width: 150px;
+}
+.brazil_box {
+    float: left;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 0;
+}
+.brazil_box figcaption {
+    text-align: center;
+    font-size: small;
+}
+article {
+    position: relative;
+}
+
+.face img {
+    float: right;
+    width: 100px;
+    margin-bottom: 100px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+.face p {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.classy {
+    border: 1px solid black;
+    border-radius: 1em 1em 1em 1em;
+}
+
+.flexman nav {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    background-color: black;
+    padding: 10px;
+    border: 1px solid black;
+
+}
+
+
+
+footer {
+    padding: 5px;
+    background-color: aqua;
+    margin-top: 10px;
+    border: 1px solid black;
+    text-align: center;
+
+}
+.flexman nav {
+    background-color: aliceblue;
+}
