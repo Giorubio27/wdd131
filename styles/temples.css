@@ -1,3 +1,11 @@
+figcaption {
+    .knewave-regular {
+            font-family: "Knewave", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+}
+
 main {
     max-width: 800px;
     margin: 0 auto;
@@ -20,7 +28,7 @@ header {
 }
 
 figcaption {
-    font-family: 'Times New Roman', Times, serif;
+    
     text-decoration: underline;
     text-align: center;
 }
