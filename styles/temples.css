@@ -1,0 +1,27 @@
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+.flex_time {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+  
+}
+
+figcaption {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+header, footer {
+    background-color: lightblue;
+    text-align: center;
+}
+.ronaldo {}
