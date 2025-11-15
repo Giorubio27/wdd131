@@ -3,6 +3,14 @@ main {
     margin: 0 auto;
     
 }
+
+
+header {
+    display: grid;
+    grid-template-rows: 1fr;
+    
+}
+
 .flex_time {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -24,4 +32,86 @@ header, footer {
     background-color: lightblue;
     text-align: center;
 }
-.ronaldo {}
+
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: aliceblue;
+    color: black;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: .5s;
+
+}
+
+.navigation a:hover, navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+@media (min-width: 740px) {
+    .navigation {
+        display: flex;
+        
+    }
+    .flexxy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1  100%;
+        padding-left: 7rem;
+        font-size: larger;
+    }
+    h1 {
+        padding-left: 20px;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+}

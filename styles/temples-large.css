@@ -1,0 +1,31 @@
+@media (min-width: 740px) {
+    .navigation {
+        display: flex;
+
+    }
+
+    .flexxy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        padding-left: 7rem;
+        font-size: larger;
+    }
+
+    h1 {
+        padding-left: 20px;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+}
