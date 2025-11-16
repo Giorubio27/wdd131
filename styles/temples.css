@@ -1,22 +1,33 @@
-figcaption {
-    .knewave-regular {
-            font-family: "Knewave", system-ui;
-            font-weight: 400;
-            font-style: normal;
-        }
+body {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
 }
+
 
 main {
     max-width: 800px;
     margin: 0 auto;
-    
+
+}
+
+header,
+footer {
+    border: 1px solid black;
+    box-shadow: 0 0 20px black
+}
+
+figure img {
+    border: 1px solid black;
+    box-shadow: 0 0 20px black;
 }
 
 
 header {
     display: grid;
     grid-template-rows: 1fr;
-    
+
 }
 
 .flex_time {
@@ -24,19 +35,21 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 25px;
     place-items: center;
-  
+
 }
 
 figcaption {
-    
+
     text-decoration: underline;
     text-align: center;
 }
+
 h2 {
     text-align: center;
 }
 
-header, footer {
+header,
+footer {
     background-color: lightblue;
     text-align: center;
 }
@@ -61,6 +74,7 @@ header, footer {
     top: 1rem;
     right: 1rem;
 }
+
 .navigation {
     list-style: none;
     margin: 0 auto;
@@ -70,6 +84,7 @@ header, footer {
 .navigation li {
     display: none;
 }
+
 .navigation a {
     display: block;
     padding: .75rem;
@@ -81,7 +96,8 @@ header, footer {
 
 }
 
-.navigation a:hover, navigation a:active {
+.navigation a:hover,
+navigation a:active {
     color: white;
     background-color: black;
 }
@@ -97,8 +113,9 @@ header, footer {
 @media (min-width: 740px) {
     .navigation {
         display: flex;
-        
+
     }
+
     .flexxy {
         display: flex;
         justify-content: space-between;
@@ -107,10 +124,11 @@ header, footer {
 
     .navigation li {
         display: block;
-        flex: 1 1  100%;
+        flex: 1 1 100%;
         padding-left: 7rem;
         font-size: larger;
     }
+
     h1 {
         padding-left: 20px;
     }
