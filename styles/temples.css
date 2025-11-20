@@ -37,7 +37,9 @@ header {
     place-items: center;
 
 }
-
+nav {
+    display: flex;
+}
 figcaption {
 
     text-decoration: underline;
