@@ -88,12 +88,15 @@ footer {
     body {
         display: block;
         width: 1000px;
-        align-self: center;
+        margin-left: 500px;
+        
     }
+    
 
     .hero img {
         width: 1000px;
         height: auto;
+
 
     }
 
