@@ -14,11 +14,13 @@
 
 section {
     text-align: center;
+    display: flex;
 }
 
 article img {
     padding-top: 20px;
     background-color: yellow;
+    display: flex;
 }
 
 li {
@@ -88,10 +90,13 @@ footer {
     body {
         display: block;
         width: 1000px;
-        margin-left: 500px;
-        
     }
+    .holy_grail {
+        display: grid;
+        grid-template-columns: repeat(auto-fit);
+        
     
+    }
 
     .hero img {
         width: 1000px;
