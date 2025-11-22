@@ -90,6 +90,9 @@ span {
         
 
     }
+    .down img::after {
+        content: none;
+    }
 
     .down h4 {
         display: flex;
