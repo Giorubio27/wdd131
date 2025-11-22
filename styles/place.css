@@ -1,4 +1,9 @@
 /* Mobile view */
+:root {
+    --primary-color: rgb(5, 194, 5);
+    --secondary-color: yellow;
+}
+
 
 h1,
 section,
@@ -20,19 +25,19 @@ li {
 }
 
 header {
-    background-color: rgb(4, 185, 4);
+    background-color: var(--primary-color);
     padding: 1px;
 }
 
 footer {
-    background-color: rgb(4, 185, 4);
+    background-color: var(--primary-color);
     color: white;
     font-size: larger;
 }
 
 picture img {
     padding: 3px;
-    background-color: yellow;
+    background-color: var(--secondary-color);
     margin-top: 0;
 }
 
@@ -88,7 +93,7 @@ span {
 
     .down h4 {
         display: flex;
-        background-color: rgb(4, 185, 4);
+        background-color: var(--primary-color);
         width: 100%;
         padding-top: 10px;
         padding-bottom: 25px;
@@ -104,7 +109,7 @@ span {
 
     .up h3 {
         display: flex;
-        background-color: rgb(4, 185, 4);
+        background-color: var(--primary-color);
         width: 100%;
         padding-top: 5px;
         padding-bottom: 25px;
