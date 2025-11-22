@@ -8,21 +8,28 @@
     <meta name="description"
         content="This is a landing page about the country that I am from. I love this country and all there is to it. I am going to be showing some data about this country as well">
     <title>Hoopla</title>
-    <link rel="stylesheet" href="styles/place.css">
-    <script src="scripts/place.js" defer></script>
+    <link rel="stylesheet" href="countrystyles/place.css">
+    <script src="countryscripts/place.js" defer></script>
 </head>
 
 <body>
-    <header>
-            <h1>Brazil</h1>
-    </header>
-    <main>
-        <div class="hero">
-            <picture>
-                <source srcset="welcome_to_brazil_large.webpg" type="images/webp" media="(min-width: 500px)">
-                <img src="images/welcome_to_brazil_small.webp" alt="Brazil" width="400">
-            </picture>
-            <section class="straight up">
+    <div class="holy_grail">
+        <header class="flexman">
+            <section class="straight">
+                <article>
+                    <h2>Brazil</h2>
+                    <picture class="hero">
+                        <source srcset="welcome_to_brazil_large.wepb" media="(min_width: 500)">
+                        <img src="countryimages/welcome_to_brazil_small.webp" alt="Brazil" width="400">
+                    </picture>
+                </article>
+
+            </section>
+
+        </header>
+        <main class="flexman">
+
+            <section class="straight data">
                 <h3>Data</h3>
                 <ul>
                     <li><span id="boldy">Area</span>: 8,515,767 km</li>
@@ -35,21 +42,21 @@
                 </ul>
 
             </section>
-            <section class="straight down">
+            <section class="straight edge">
                 <h4>Weather</h4>
-                <img src="images/weather.svg" alt="Weather" width="80" height="167">
+                <img src="countryimages/weather.svg" alt="Weather" width="80" height="167">
                 <ul>
                     <li><span id="boldy">Temperature</span>: 47° F</li>
                     <li><span id="boldy">Conditions</span>: Cloudy</li>
                     <li><span id="boldy">Wind</span>: 5km /h</li>
-                    <li><span id="boldy">Wind chill</span>: 43° C</li>
+                    <li><span id="boldy">Wind chill</span>: 43° C </li>
 
                 </ul>
+      
             </section>
-        </div>
 
         </main>
-        <footer>
+        <footer class="straight squish">
             <article>
                 <p>©️<span id="currentyear"></span> 🥷🏼 Giovanni Rubio 🥷🏼 </p>
                 <p>Brazil</p>
@@ -57,7 +64,7 @@
             </article>
 
         </footer>
-    
+    </div>
 
 </body>
 
