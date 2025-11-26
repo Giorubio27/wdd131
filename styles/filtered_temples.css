@@ -1,0 +1,156 @@
+body {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+header,
+footer {
+    border: 1px solid black;
+    box-shadow: 0 0 20px black
+}
+
+img {
+    border: 1px solid black;
+    box-shadow: 0 0 20px black;
+    width: 100%;
+}
+.flex_time section {
+    margin: 10px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: lightgrey;
+    padding: 20px;
+    box-shadow: 0 0 50px lightblue;
+    
+}
+
+
+header {
+    display: grid;
+    grid-template-rows: 1fr;
+
+}
+
+.flex_time {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+
+}
+
+nav {
+    display: flex;
+}
+
+figcaption {
+
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+header,
+footer {
+    background-color: lightblue;
+    text-align: center;
+}
+
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: aliceblue;
+    color: black;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: .5s;
+
+}
+
+.navigation a:hover,
+navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+@media (min-width: 740px) {
+    .navigation {
+        display: flex;
+
+    }
+
+    .flexxy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        padding-left: 7rem;
+        font-size: larger;
+    }
+
+    h1 {
+        padding-left: 20px;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+}
