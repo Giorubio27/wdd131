@@ -94,20 +94,60 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/st.-george-utah-temple/st.-george-utah-temple-40435-main.jpg"
     }]
 
-createTempleCard();
+createTempleCard(temples);
 
-function createTempleCard() {
-    temples.forEach(temple => {
+
+const homeLink = document.querySelector("#home");
+
+homeLink.addEventListener("click", () => {
+    document.querySelector(".flex_time").innerHTML = '';
+    createTempleCard(temples.filter(temple => temple.templeName.includes("")))
+
+});
+
+const oldLink = document.querySelector("#old");
+
+oldLink.addEventListener("click", () => {
+    document.querySelector(".flex_time").innerHTML = '';
+    createTempleCard(temples.filter(temple => temple.dedicated.includes("19")))
+    
+});
+
+const newLink = document.querySelector("#new");
+
+newLink.addEventListener("click", () => {
+    document.querySelector(".flex_time").innerHTML = '';
+    createTempleCard(temples.filter(temple => temple.dedicated.includes("20")));
+})
+
+const largeLink = document.querySelector("#large");
+
+largeLink.addEventListener("click", () => {
+    document.querySelector(".flex_time").innerHTML = '';
+    createTempleCard(temples.filter(temple => temple.area > 90000));
+})
+
+const smallLink = document.querySelector("#small");
+
+smallLink.addEventListener("click", () => {
+    document.querySelector(".flex_time").innerHTML = '';
+    createTempleCard(temples.filter(temple => temple.area < 10000));
+});
+
+
+
+function createTempleCard(filteredTemples) {
+    filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
-        let dedication = document.createElement("p");
+        let dedicated = document.createElement("p");
         let area = document.createElement("p");
         let img = document.createElement("img");
 
         name.textContent = temple.templeName;
         location.innerHTML = `<span class ="label">location:</span> ${temple.location}`;
-        dedication.innerHTML = `<span class ="label">Dedication:</span> ${temple.dedication}`;
+        dedicated.innerHTML = `<span class ="label">Dedication:</span> ${temple.dedicated}`;
         area.innerHTML = `<span class ="label">Area:</span> ${temple.area} sqft`;
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple`);
@@ -117,7 +157,7 @@ function createTempleCard() {
 
         card.appendChild(name);
         card.appendChild(location);
-        card.appendChild(dedication);
+        card.appendChild(dedicated);
         card.appendChild(area);
         card.appendChild(img);
 
@@ -125,3 +165,4 @@ function createTempleCard() {
 
     });
 }
+

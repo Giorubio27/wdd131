@@ -126,7 +126,11 @@ navigation a:active {
 @media (min-width: 740px) {
     .navigation {
         display: flex;
+        
 
+    }
+    header {
+        padding-right: 250px;
     }
 
     .flexxy {
