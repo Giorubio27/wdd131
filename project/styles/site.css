@@ -30,6 +30,10 @@ th, caption {
     border: thin solid black;
     border-collapse: separate;
     padding: 10px;
+    text-align: center;
+}
+table {
+    margin: 10px;
 }
 tbody tr:nth-child(odd) {
     background-color: rgba(128, 148, 240, 0.637);
@@ -37,4 +41,9 @@ tbody tr:nth-child(odd) {
 }
 caption {
     font-size: larger;
+}
+.flexman {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
 }
