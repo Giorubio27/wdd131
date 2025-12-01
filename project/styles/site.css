@@ -1,0 +1,40 @@
+:root {
+    --primary-color: blue;
+    --secondary-color: green;
+    
+}
+
+.nav ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    list-style: none;
+    font-size: large;
+}
+h1 {
+    text-align: center;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+}
+.flex img {
+    padding-right: 10px;
+    width: 75px;
+    height: auto;
+}
+
+table,
+tr,
+th, caption {
+    border: thin solid black;
+    border-collapse: separate;
+    padding: 10px;
+}
+tbody tr:nth-child(odd) {
+    background-color: rgba(128, 148, 240, 0.637);
+    
+}
+caption {
+    font-size: larger;
+}
