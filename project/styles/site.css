@@ -1,6 +1,6 @@
 :root {
-    --primary-color: blue;
-    --secondary-color: green;
+    --primary-color: rgb(92,164,169);
+    --secondary-color: rgb(150, 100, 150);
 
 }
 
@@ -10,10 +10,19 @@
     justify-content: space-around;
     list-style: none;
     font-size: large;
+}nav, caption {
+    background-color: var(--primary-color);
+    border: 1px solid black;
+    margin: 2px;
+    box-shadow: 0 0 20px grey;
+}
+li a:hover, li a:active {
+    color: white;
 }
 
 h1 {
     text-align: center;
+    
 }
 
 .flex {
@@ -23,8 +32,11 @@ h1 {
 
 .flex img {
     padding-right: 10px;
-    width: 75px;
-    height: auto;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    
+    
 }
 
 table,
@@ -35,6 +47,9 @@ caption {
     border-collapse: separate;
     padding: 10px;
     text-align: center;
+}
+caption {
+    margin-bottom: 10px;
 }
 
 table {
@@ -93,4 +108,12 @@ label {
 fieldset {
     height: auto;
     box-sizing: border-box;
+    text-align: center;
 }
+
+input[type="radio"]:hover, input[type="radio"]:active {
+    box-shadow: 0 0 20px red;
+    background-color: blue;
+        }
+
+
