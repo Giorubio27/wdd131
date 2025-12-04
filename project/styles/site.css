@@ -1,23 +1,26 @@
 :root {
     --primary-color: blue;
     --secondary-color: green;
-    
+
 }
 
-.nav ul{
+.nav ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     list-style: none;
     font-size: large;
 }
+
 h1 {
     text-align: center;
 }
+
 .flex {
     display: flex;
     justify-content: center;
 }
+
 .flex img {
     padding-right: 10px;
     width: 75px;
@@ -26,24 +29,68 @@ h1 {
 
 table,
 tr,
-th, caption {
+th,
+caption {
     border: thin solid black;
     border-collapse: separate;
     padding: 10px;
     text-align: center;
 }
+
 table {
     margin: 10px;
 }
+
 tbody tr:nth-child(odd) {
     background-color: rgba(128, 148, 240, 0.637);
-    
+
 }
+
 caption {
     font-size: larger;
 }
+
 .flexman {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
+}
+
+.clutch {
+    display: grid;
+    grid-template-columns: 1fr 20%;
+
+}
+
+.letsgo {
+    display: flex;
+    flex-flow: column;
+
+}
+
+iframe {
+    height: 100%;
+}
+
+.clutch img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+input {
+    margin: 10px;
+}
+
+label {
+    text-align: left;
+    margin-left: 0;
+    text-decoration: underline;
+    width: auto;
+}
+
+fieldset {
+    height: auto;
+    box-sizing: border-box;
 }
