@@ -39,6 +39,14 @@ populateDropDown = function populateDropDown() {
     });
 }
 document.addEventListener('DOMContentLoaded', populateDropDown);
-let numvisits = Number(window.localStorage.getItem(visits-ls))
+const 
+visitDisplay = document.querySelector(".visits")
+    
+let numVisits = Number(window.localStorage.getItem("numVisits - ls")) || 0;
+
+numVisits++;
+
+
+
 document.getElementById("last_modified").innerHTML = document.lastModified;
 document.getElementById("currentyear").innerHTML = new Date().getFullYear();
