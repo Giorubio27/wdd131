@@ -39,19 +39,21 @@ populateDropDown = function populateDropDown() {
     });
 }
 document.addEventListener('DOMContentLoaded', populateDropDown);
-const 
-visitDisplay = document.querySelector(".visits")
+const
+    visitDisplay = document.querySelector(".visits");
     
 let numVisits = Number(window.localStorage.getItem("numVisits - ls")) || 0;
-
-numVisits++;
 
 if (numVisits !== 0) {
     visitDisplay.textContent = numVisits;
 }
 else {
-    visitDisplay.textContent = 'Welcome to our site!'
+    visitDisplay.textContent = 'Welcome to our site!';
 }
+
+numVisits++;
+
+
 
 
 document.getElementById("last_modified").innerHTML = document.lastModified;
