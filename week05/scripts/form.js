@@ -26,7 +26,19 @@ const products = [
     }
 ];
 
+populateDropDown = function populateDropDown() {
+    const productSelect = document.getElementById("product-select");
 
+    products.forEach(product => {
+        const option = document.createElement("option");
+        option.value = product.id;
+        option.textContent = product.name;
 
+        productSelect.appendChild(option);
+        
+    });
+}
+document.addEventListener('DOMContentLoaded', populateDropDown);
+let numvisits = Number(window.localStorage.getItem(visits-ls))
 document.getElementById("last_modified").innerHTML = document.lastModified;
 document.getElementById("currentyear").innerHTML = new Date().getFullYear();
