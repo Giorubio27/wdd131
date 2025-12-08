@@ -175,9 +175,9 @@ input[type="radio"] {
     content: "\2605"
 }
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
     body {
         width: 100%;
     }
-    
+
 }
