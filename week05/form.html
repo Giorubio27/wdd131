@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Product Review</h1>
@@ -19,14 +21,15 @@
                 <div class="no">
                     <label>Product Name
                         <select name="product" id="product-select" required>
-                            <option value=""  disabled selected>Choose a product</option>
+                            <option value="" disabled selected>Choose a product</option>
                         </select>
                     </label>
                     <label>Overall Rating</label>
                     <div class="stars">
                         <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
                         <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
-                        <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                        <input type="radio" id="threestar" name="stars" value="3" required><label
+                            for="threestar"></label>
                         <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
                         <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
                     </div>
@@ -36,20 +39,23 @@
                     <label><input type="checkbox" name="ease" value="yes">Ease of Use</label>
                     <label><input type="checkbox" name="performance" value="yes">Performance</label>
                     <label><input type="checkbox" name="design" value="yes">Design</label>
-                    <label>Written Review<span class="blue">(Optional)</span></label><input type="text" name="review" id="review">
-                    <label>Your Name<span class="blue">(Optional)</span></label><input type="text" name="review" id="yourname">
+                    <label>Written Review<span class="blue">(Optional)</span></label><input type="text" name="review"
+                        id="review">
+                    <label>Your Name<span class="blue">(Optional)</span></label><input type="text" name="review"
+                        id="yourname">
                     <input type="submit" value="Post Review" class="sub">
                 </div>
             </fieldset>
-            
-            
+
+
         </form>
     </main>
     <footer>
         <p>©️<span id="currentyear"></span>, 🥷🏼 Giovanni Rubio 🥷🏼 , Maceio</p>
         <p id="last_modified">"Last modification"</p>
         <p id="visit"></p>
-    
+
     </footer>
 </body>
+
 </html>
