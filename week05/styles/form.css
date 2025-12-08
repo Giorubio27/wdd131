@@ -1,0 +1,171 @@
+/* Stars */
+body {
+    display: block;
+    position: relative;
+    width: 500px;
+
+
+}
+
+header {
+    text-align: center;
+    margin-bottom: 0;
+
+}
+
+h1 {
+    background-color: rgb(77, 2, 77);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: .1rem;
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 50px;
+}
+
+footer {
+    background-color: rgb(77, 2, 77);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: .1rem;
+    color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: large;
+}
+
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+
+}
+
+
+
+.rev fieldset {
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    background-color: lightgrey;
+
+
+}
+
+div,
+label {
+    color: rgba(49, 2, 49, 0.925);
+    font-weight: 400;
+    padding: 0 2%;
+
+
+}
+
+.rev label {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.rev label,
+.rev select {
+    display: block;
+
+}
+
+
+.rev input[type="date"],
+.rev select {
+
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: .2rem;
+    margin-top: .2rem;
+
+}
+
+.no div {
+    display: flex;
+}
+
+.sub {
+    display: block;
+    margin-top: 1%;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+.rev input[type="date"] {
+    margin-bottom: 1rem;
+}
+
+.rev input[type="text"] {
+    width: 97%;
+    padding-bottom: 5rem;
+    margin-bottom: 1rem;
+}
+
+#yourname {
+    padding-bottom: 1rem;
+
+}
+
+.rev input[type="checkbox"] {
+    margin-right: 6px;
+
+
+}
+
+.blue {
+    color: blue;
+}
+
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+
+
+
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+}
+
+.stars label {
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars label:hover {
+    color: #000;
+}
+
+.stars label::before {
+    content: "\2606";
+}
+
+.stars input:checked~label::before {
+    content: "\2605"
+}
