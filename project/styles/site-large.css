@@ -1,0 +1,188 @@
+:root {
+    --primary-color: rgb(92, 164, 169);
+    --secondary-color: rgb(150, 100, 150);
+
+}
+
+.nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    list-style: none;
+    font-size: large;
+}
+
+nav,
+caption {
+    background-color: var(--primary-color);
+    border: 1px solid black;
+    margin: 2px;
+    box-shadow: 0 0 20px grey;
+}
+
+li a:hover,
+li a:active {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.flex img {
+    padding-right: 10px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+
+
+}
+
+table,
+tr,
+th,
+caption {
+    border: thin solid black;
+    border-collapse: separate;
+    padding: 10px;
+    text-align: center;
+}
+
+caption {
+    margin-bottom: 10px;
+}
+
+table {
+    margin: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(128, 148, 240, 0.637);
+
+}
+
+caption {
+    font-size: larger;
+}
+
+.flexman {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 100%;
+
+}
+
+.clutch {
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    
+
+}
+
+.letsgo {
+    display: flex;
+    flex-flow: column;
+
+}
+footer {
+    font-size: large;
+    background-color: lightblue;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 0 0 20px black;
+    margin-top: .5rem;
+}
+
+iframe {
+    width: 97%;
+    margin: 1%;
+}
+
+.clutch img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+
+
+
+}
+
+.order input[type="text"],
+.order input[type="email"],
+.order input[type="tel"] {
+    display: block;
+    margin-top: .5rem;
+    margin-left: .5rem;
+
+}
+
+.order input[type="radio"] {
+    margin-top: .5rem;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+
+}
+
+.order label {
+    display: flex;
+    align-items: center;
+
+}
+
+.order div {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+
+
+fieldset {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+
+input[type="radio"]:hover,
+input[type="radio"]:active {
+    box-shadow: 0 0 20px red;
+    background-color: blue;
+}
+
+@media (max-width: 400px) {
+    main {
+        width: 400px;
+    }
+    nav {
+        display: flex;
+        }
+        #menu {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            text-decoration: none;
+            padding: .5rem .75rem;
+            background-color: aliceblue;
+            color: black;
+        }
+    
+        #menu::before {
+            content: "≡";
+        }
+    
+    
+}
