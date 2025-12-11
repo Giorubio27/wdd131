@@ -20,15 +20,13 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-
-
 }
 
 .flexman nav a:hover {
     text-decoration: overline;
 }
 
-#course_title {
+#course-title {
     color: blueviolet;
     display: block;
 }
@@ -39,8 +37,6 @@ h1 {
     margin-bottom: 0;
     border: 1px solid black;
     text-align: center;
-
-
 }
 
 
@@ -50,8 +46,6 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
-
 }
 
 
@@ -115,7 +109,6 @@ aside {
 
 .brazil img {
     float: left;
-    width: 200px;
     padding: 25px;
     width: 150px;
 }
@@ -180,11 +173,13 @@ footer {
 
 }
 
-.flexman nav {
-    background-color: aliceblue;
-}
+
 
 header,
 footer {
     display: grid;
+}
+
+header {
+    background-color: lightgray;
 }
