@@ -1,10 +1,26 @@
+* {
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+}
+
 main {
     width: 100%;
 }
 
+span {
+    text-align: center;
+    display: block;
+    margin: 1rem;
+}
+
 .griddy {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+
 
 }
 
@@ -17,18 +33,13 @@ main {
     display: block;
 }
 
-.border {
-    border: 1px solid black;
-    border-radius: 1rem 1rem;
-
-}
-
 
 h1 {
     background-color: aqua;
     margin-bottom: 0;
     border: 1px solid black;
     text-align: center;
+
 
 }
 
@@ -60,7 +71,7 @@ h1 {
 
 }
 
-.card section {
+.card {
     border: 1px solid black;
     border-radius: 1rem 1rem;
 }
@@ -141,10 +152,7 @@ section h2 {
     text-align: center;
 }
 
-.classy {
-    border: 1px solid black;
-    border-radius: 1em 1em 1em 1em;
-}
+
 
 div {
     margin: 1rem;
@@ -179,5 +187,4 @@ footer {
 header,
 footer {
     display: grid;
-
 }
