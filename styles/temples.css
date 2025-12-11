@@ -14,7 +14,9 @@ main {
 header,
 footer {
     border: 1px solid black;
-    box-shadow: 0 0 20px black
+    box-shadow: 0 0 20px black;
+    background-color: lightblue;
+    text-align: center;
 }
 
 figure img {
@@ -51,11 +53,6 @@ h2 {
     text-align: center;
 }
 
-header,
-footer {
-    background-color: lightblue;
-    text-align: center;
-}
 
 
 #menu {
