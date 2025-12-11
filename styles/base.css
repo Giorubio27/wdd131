@@ -95,9 +95,6 @@ aside {
     margin-left: 10px;
 }
 
-.face p {
-    text-align: center;
-}
 
 .brazil {
     position: relative;
@@ -139,6 +136,7 @@ article {
 
 .face p {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 section h2 {
@@ -156,7 +154,7 @@ div {
     flex-direction: row nowrap;
     justify-content: space-around;
     margin-bottom: 15px;
-    background-color: black;
+    background-color: aqua;
     padding: 10px;
     border: 1px solid black;
 
@@ -173,13 +171,11 @@ footer {
 
 }
 
-
+header {
+    display: block;
+}
 
 header,
 footer {
     display: grid;
-}
-
-header {
-    background-color: lightgray;
 }
