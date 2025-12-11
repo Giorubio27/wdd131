@@ -1,8 +1,7 @@
-:root {
-    --primary-color: rgb(92, 164, 169);
-    --secondary-color: rgb(150, 100, 150);
 
-}
+
+@media (min-width: 700px) {
+    
 
 .nav ul {
     display: flex;
@@ -161,28 +160,5 @@ input[type="radio"]:hover,
 input[type="radio"]:active {
     box-shadow: 0 0 20px red;
     background-color: blue;
-}
-
-@media (max-width: 400px) {
-    main {
-        width: 400px;
-    }
-    nav {
-        display: flex;
-        }
-        #menu {
-            display: block;
-            font-size: 2rem;
-            font-weight: 700;
-            text-decoration: none;
-            padding: .5rem .75rem;
-            background-color: aliceblue;
-            color: black;
-        }
-    
-        #menu::before {
-            content: "≡";
-        }
-    
-    
+};
 }
