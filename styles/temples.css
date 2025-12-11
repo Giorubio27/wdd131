@@ -63,17 +63,16 @@ h2 {
     padding: .5rem .75rem;
     background-color: aliceblue;
     color: black;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
 #menu::before {
     content: "≡";
 }
 
-#menu {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
+
 
 .navigation {
     list-style: none;
