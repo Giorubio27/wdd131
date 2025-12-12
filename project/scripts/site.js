@@ -40,6 +40,7 @@ const teams = [
 
 teamDropDown = function teamDropDown() {
     const teamSelect = document.getElementById("team-select");
+    console.log('teamSelect element:', teamSelect);
 
     teams.forEach(product => {
         const option = document.createElement("option");
@@ -100,6 +101,7 @@ const networks = [
 
 networkDropDown = function networkDropDown() {
     const networkSelect = document.getElementById("network-select");
+    console.log('networkSelect element:', networkSelect);
 
     networks.forEach(network => {
         const option = document.createElement("option");
@@ -131,6 +133,7 @@ const seasons = [
 
 seasonDropDown = function seasonDropDown() {
     const seasonSelect = document.getElementById("season-select");
+    console.log('seasonSelect element:', seasonSelect);
 
     seasons.forEach(season => {
         const option = document.createElement("option");
