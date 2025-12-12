@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,8 @@
     <link rel="stylesheet" href="styles/site-small.css">
     <script src="scripts/site.js" defer></script>
 </head>
-<body>
+
+<body  class="griddle">
     <header>
         <section class="flex">
             <img src="images/g_league_new.webp" alt="Gleague" width="100" height="100">
@@ -29,22 +31,83 @@
                 </ul>
             </nav>
         </section>
-    
-    
+
+
     </header>
     <main>
+        <div class="filterflex">
+            <label>Teams
+                <select name="team" id="team-select" required>
+                    <option value="" disabled selected>Choose a team</option>
+                </select>
+            </label>
+            <label>Season
+                <select name="season" id="season-select" required>
+                    <option value="" disabled selected>Choose a season</option>
+                </select>
+            </label>
+            <label>Broadcast Network
+                <select name="network" id="network-select" required>
+                    <option value="" disabled selected>Choose a Network</option>
+                </select>
+            </label>
+        </div>
+        <div class="wide">
+            <table>
+                <caption>Schedule</caption>
+                <thead>
+                    <tr>
+                        <th colspan="2">Matchups</th>
+                        <th scope="col">Gametime</th>
+                        <th scope="col">Gameday</th>
+                    </tr>
+                </thead>
+                <tbody class="align">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Spurs vs Raptors</td>
+                        <td>7:30PM PST</td>
+                        <td>Tonight</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Kings vs Suns</td>
+                        <td>5:30PM PST</td>
+                        <td>12/13/2025</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Mavs Vs Heat</td>
+                        <td>1:00PM PST</td>
+                        <td>12/14/2025</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Lakers Vs Pacers</td>
+                        <td> 12:00PM CST</td>
+                        <td>12/17/2025</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Nets Vs Thunder</td>
+                        <td> 12:00PM PST</td>
+                        <td>12/19/2025</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
 
     </main>
     <footer>
-    
         <p>©️<span id="currentyear"></span>, 🥷🏼 Giovanni Rubio 🥷🏼 , Maceio</p>
         <p id="last_modified">"Last modification"</p>
         <a href="images/site_large.png">Wireframe Large</a>
         <a href=" images/site_mobile.png">Wireframe Mobile</a>
     </footer>
-   
-    
-    
-    
+
+
+
+
 </body>
+
 </html>

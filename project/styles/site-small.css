@@ -172,6 +172,29 @@ fieldset {
 
 }
 
+/* Schedule css */
+.filterflex {
+    display: flex;
+    justify-content: space-around;
+    margin: .7rem;
+}
+.filterflex select {
+    padding: .2rem;
+    
+}
+.align {
+    text-align: center;
+}
+tbody tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+.wide {
+    display: grid;
+    text-align: center;
+    height: 500px;
+}
+
 @media (min-width: 740px) {
     .flexman {
         display: grid;
