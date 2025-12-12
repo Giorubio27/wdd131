@@ -52,24 +52,24 @@ teamDropDown = function teamDropDown() {
     });
 }
 document.addEventListener('DOMContentLoaded', teamDropDown);
-// const
-//     visitDisplay = document.querySelector(".visit");
+const
+    visitDisplay = document.querySelector(".visit");
 
-// let numVisits = Number(window.localStorage.getItem("numVisits - ls")) || 0;
+let numVisits = Number(window.localStorage.getItem("numVisits - ls")) || 0;
 
 
 
-// numVisits++;
+numVisits++;
 
-// if (numVisits !== 0) {
-//     visitDisplay.textContent = `Number of Visits:  ${numVisits}`;
-// } else {
-//     visitDisplay.textContent = `Welcome to our site!`;
-// }
+if (numVisits !== 0) {
+    visitDisplay.textContent = `Number of Visits:  ${numVisits}`;
+} else {
+    visitDisplay.textContent = `Welcome to our site!`;
+}
 
-// window.localStorage.setItem("numVisits - ls", numVisits);
+window.localStorage.setItem("numVisits - ls", numVisits);
 
-// network
+
 
 const networks = [
     {
