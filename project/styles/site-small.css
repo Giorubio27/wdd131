@@ -171,3 +171,19 @@ fieldset {
 
 
 }
+
+@media (min-width: 740px) {
+    .flexman {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 300px;
+    }
+
+    .clutch {
+        display: grid;
+        grid-template-columns: 1fr 20%;
+    }
+    iframe {
+        width: 100%;
+    }
+}
