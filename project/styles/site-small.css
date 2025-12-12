@@ -219,6 +219,38 @@ tbody tr:nth-child(odd) {
     text-align: center;
     height: 500px;
 }
+fieldset {
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    margin-left: .2rem;
+    margin-bottom: 1rem;
+    background-color: var(--primary-color);
+}
+
+fieldset legend {
+    position: relative;
+    top: 12px;
+    margin: 2px;
+    text-align: left;
+    font-size: large;
+}
+
+.order input[type="submit"] {
+    display: flex;
+    width: auto;
+    margin-top: 7px;
+    box-shadow: 0 0 30px lightgrey;
+    font-size: large;
+}
+
+.order input[type="submit"]:hover {
+    color: var(--primary-color);
+    background-color: black;
+}
+
+label {
+    margin-top: 5px;
+}
 
 @media (min-width: 740px) {
     .flexman {
@@ -258,4 +290,6 @@ tbody tr:nth-child(odd) {
     #menu {
         display: none;
     }
+    
+    
 }
