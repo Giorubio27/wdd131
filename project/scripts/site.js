@@ -1,7 +1,14 @@
 document.getElementById("last_modified").innerHTML = document.lastModified;
 document.getElementById("currentyear").innerHTML = new Date().getFullYear();
-
+const navigation = document.querySelector('.nav')
 const hambutton = document.querySelector('#menu');
+
+
+hambutton.addEventListener('click', () => {
+    navigation.classList.toggle('showtime');
+    hambutton.classList.toggle('showtime');
+});
+
 
 const teams = [
     {

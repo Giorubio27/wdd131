@@ -14,6 +14,7 @@ header {
 
 }
 
+
 h1 {
     text-align: center;
 
@@ -45,7 +46,13 @@ li a:hover,
 li a:active {
     color: white;
 }
+.showtime li {
+    display: block;
+}
 
+#menu.showtime::before {
+    content: "X";
+}
 
 #menu {
     display: block;
@@ -53,18 +60,21 @@ li a:active {
     font-weight: 700;
     text-decoration: none;
     padding: .5rem .75rem;
-    background-color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.021);
+    border: 1px solid black;
     color: black;
 }
 
 #menu::before {
     content: "≡";
+    
 }
 
 #menu {
     position: absolute;
     top: 1rem;
     right: 1rem;
+    background-color: var(--primary-color);
 }
 
 .nav ul {
@@ -72,6 +82,7 @@ li a:active {
     margin: 0 auto;
     max-width: 760px;
     display: flex;
+    
 
 
 }
@@ -80,9 +91,15 @@ nav {
     display: flex;
 
 }
+nav li a {
+    display: flex;
+}
+.nav li {
+    display: none;
+}
 
 
-.navigation a {
+.nav a {
     display: block;
     padding: .75rem;
     text-align: center;
@@ -93,17 +110,25 @@ nav {
 
 }
 
-.navigation a:hover,
+.nav a:hover,
 navigation a:active {
     color: white;
     background-color: black;
 }
 
-.show li {
+.showtime li {
     display: block;
 }
+.showtime ul {
+    display: block;
+}
+caption {
+    margin-top: 20px;
+    padding: 10px;
+}
 
-#menu.show::before {
+
+#menu.showtime::before {
     content: "X";
 }
 
@@ -201,6 +226,27 @@ tbody tr:nth-child(odd) {
         grid-template-columns: 1fr 1fr;
         height: 300px;
     }
+    .color {
+        background-color: white;
+    }
+    .nav {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    
+    }
+    .nav li {
+        display: contents;
+    }
+    caption {
+        padding: .5rem;
+        margin-bottom: .5rem;
+    }
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     .clutch {
         display: grid;
@@ -208,5 +254,8 @@ tbody tr:nth-child(odd) {
     }
     iframe {
         width: 100%;
+    }
+    #menu {
+        display: none;
     }
 }
