@@ -14,10 +14,12 @@ picture {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    
+
 }
-h1 {
-    color: white;
+
+h1,
+p {
+    color: black;
 }
 
 li {
@@ -87,9 +89,10 @@ span {
         position: absolute;
         margin-bottom: 90px;
         margin-right: 20px;
-        
+
 
     }
+
     .down img::after {
         content: none;
     }
@@ -106,7 +109,7 @@ span {
         margin-right: 25px;
         justify-content: left;
         align-items: center;
-        
+
 
     }
 
@@ -116,7 +119,7 @@ span {
         width: 100%;
         padding-top: 5px;
         padding-bottom: 25px;
-            margin-right: 25px;
+        margin-right: 25px;
 
 
 
