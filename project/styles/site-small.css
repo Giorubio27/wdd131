@@ -146,7 +146,9 @@ footer {
     background-color: var(--primary-color);
     text-align: center;
 }
-
+footer a {
+    color: black;
+}
 input[type="radio"]:hover,
 input[type="radio"]:active {
     box-shadow: 0 0 20px red;
