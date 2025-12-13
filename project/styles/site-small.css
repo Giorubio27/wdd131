@@ -143,7 +143,7 @@ caption {
 }
 
 footer {
-    background-color: lightblue;
+    background-color: var(--primary-color);
     text-align: center;
 }
 
