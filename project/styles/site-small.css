@@ -1,9 +1,9 @@
 :root {
     --primary-color: rgb(92, 164, 169);
     --secondary-color: rgb(150, 100, 150);
-
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-style: normal;
 }
-
 main {
     width: 100%;
 }
